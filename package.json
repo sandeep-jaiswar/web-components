@@ -9,7 +9,9 @@
     "lint": "eslint src",
     "format": "prettier --write .",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "predeploy": "npm run build-storybook",
+    "deploy-storybook": "gh-pages -d storybook-static"
   },
   "author": "sandeep-jaiswar",
   "license": "ISC",
@@ -42,6 +44,8 @@
     "@storybook/test": "^8.3.6",
     "@types/react": "^18.3.12",
     "eslint-plugin-storybook": "^0.10.1",
+    "gh-pages": "^6.2.0",
     "storybook": "^8.3.6"
-  }
+  },
+  "homepage": "http://sandeep-jaiswar.github.io/web-components"
 }
