@@ -11,7 +11,7 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "predeploy": "npm run build-storybook",
-    "deploy-storybook": "gh-pages -d storybook-static"
+    "deploy-storybook": "npm run predeploy && gh-pages -d storybook-static"
   },
   "author": "sandeep-jaiswar",
   "license": "ISC",
